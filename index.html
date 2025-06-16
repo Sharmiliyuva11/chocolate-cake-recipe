@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chocolate Cake Recipe</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Chocolate Cake</h1>
+    <img src="C:\Users\Y.SHARMILI\OneDrive\Desktop\chocolate-cake.jpg" alt="Chocolate Cake" class="recipe-img"/>
+<div class="video-section">
+  <h2>🍽️ Watch the Recipe</h2>
+  <iframe 
+    width="100%" 
+    height="315" 
+    src="https://www.youtube.com/embed/EaljSnLrJW8" 
+    title="Moist & Fudgy Chocolate Cake" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen>
+  </iframe>
+</div>
+
+
+
+    <div class="info">
+      <p>⏱️ Prep Time: 45 mins | 🍽️ Serves: 8</p>
+    </div>
+
+    <button id="toggleIngredients">Show Ingredients</button>
+    <ul id="ingredients" class="hidden">
+      <li>1½ cups flour</li>
+      <li>1 cup sugar</li>
+      <li>½ cup cocoa powder</li>
+      <li>1 tsp baking soda</li>
+      <li>½ tsp salt</li>
+      <li>1 cup milk</li>
+      <li>½ cup vegetable oil</li>
+      <li>1 tsp vanilla extract</li>
+    </ul>
+
+    <button id="toggleSteps">Show Steps</button>
+    <ol id="steps" class="hidden">
+      <li>Preheat oven to 180°C (350°F).</li>
+      <li>Mix all dry ingredients in a bowl.</li>
+      <li>Add wet ingredients and mix until smooth.</li>
+      <li>Pour into a greased baking tin.</li>
+      <li>Bake for 30–35 minutes.</li>
+      <li>Let it cool before serving.</li>
+    </ol>
+
+    <div class="progress-bar" id="progressBar"></div>
+
+    <div class="cooking-controls">
+      <button id="startCooking">Start Cooking</button>
+      <button id="nextStep" disabled>Next</button>
+    </div>
+
+    <button onclick="window.print()">🖨️ Print Recipe</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
